@@ -1,4 +1,4 @@
-name: 'Build Example corne nice_nano display'
+name: 'Build Corne Custom'
 on: workflow_dispatch
 jobs:
   build:
