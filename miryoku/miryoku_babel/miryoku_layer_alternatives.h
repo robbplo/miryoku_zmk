@@ -26,12 +26,6 @@ U_NP,              U_NP,              U_NA,              &kp SPACE,         U_NA
 
 
 
-// Copyright 2022 Manna Harbour
-// https://github.com/manna-harbour/miryoku
-// generated -*- buffer-read-only: t -*-
-// target: zmk
-
-#pragma once
 
 
 #define MIRYOKU_ALTERNATIVES_BASE_AZERTY_FLIP \
