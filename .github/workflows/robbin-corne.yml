@@ -7,4 +7,4 @@ jobs:
     with:
       board: '["nice_nano_v2"]'
       shield: '["splitkb_aurora_corne_left","splitkb_aurora_corne_right","settings_reset"]'
-      kconfig: '["CONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y"]'
+      kconfig: '["CONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y","CONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
