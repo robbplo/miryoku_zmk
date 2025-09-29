@@ -23,10 +23,9 @@
 #define U_NA &none // present but not available for use
 #define U_NU &none // available but not used
 
-
 // home row mods configuration
 // how long a key must be held to trigger holding
-#define U_TAPPING_TERM 200
+#define U_TAPPING_TERM 280
 // deactivate home row mods while typing, activated again after the delay
 #define U_STREAK_DELAY 80
 
