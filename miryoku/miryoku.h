@@ -27,7 +27,7 @@
 // how long a key must be held to trigger holding
 #define U_TAPPING_TERM 280
 // deactivate home row mods while typing, activated again after the delay
-#define U_STREAK_DELAY 80
+#define U_STREAK_DELAY 125
 
 #include "miryoku_clipboard.h"
 
