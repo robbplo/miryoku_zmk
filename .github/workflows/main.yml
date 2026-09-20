@@ -238,12 +238,17 @@ jobs:
           zmk=`echo "$branches" | cut -d ' ' -f 1`
           if [ -z "$zmk" ]
           then
-            zmk='zmkfirmware/zmk/main'
+            # ZMK main at bebc833 (2025-10-08); avoid upstream breaking changes.
+            zmk='zmkfirmware/zmk/4ec69cb7e658590adf6354027aca789b364a70c5'
           fi
           user=`echo "$zmk" | cut -f 1 -d '/'`
           repo=`echo "$zmk" | cut -f 2 -d '/'`
           branch=`echo "$zmk" | cut -f 3- -d '/'`
-          git clone -b "$branch" --depth 1 "https://github.com/$user/$repo.git" 'zmk'
+          # Fetch explicitly because git clone -b does not accept commit SHAs.
+          git init zmk
+          git -C zmk remote add origin "https://github.com/$user/$repo.git"
+          git -C zmk fetch --depth 1 origin "$branch"
+          git -C zmk checkout --detach FETCH_HEAD
           echo "::endgroup::"
 
           echo "::group::merge"
