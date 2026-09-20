@@ -8,6 +8,6 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["promicro_nrf52840"]'
+      board: '["nice_nano"]'
       shield: '["splitkb_aurora_corne_left","splitkb_aurora_corne_right","settings_reset"]'
       kconfig: '["CONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y\nCONFIG_BT_CTLR_TX_PWR_PLUS_8=y"]'
