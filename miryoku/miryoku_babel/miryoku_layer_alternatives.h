@@ -33,7 +33,7 @@ U_NP,              U_NP,              U_NA,              U_NA,              U_NA
 #define MIRYOKU_ALTERNATIVES_SYM \
 &kp EXCL,          &kp AT,            &kp HASH,          &kp DLLR,          &kp PRCNT,         &kp CARET,         &kp AMPS,          &kp ASTRK,         &kp DQT,           &kp GRAVE,         \
 &kp LT,            &kp LBKT,          &kp LBRC,          &kp LPAR,          &kp UNDER,         &kp MINUS,         &kp RPAR,          &kp RBRC,          &kp RBKT,          &kp GT,            \
-&kp TILDE,         &kp GRAVE,         &kp EQUAL,         &kp COLON,         &kp BSLH,          &kp PIPE,          &kp SEMICOLON,     &kp PLUS,          U_NA,              U_NA,              \
+&kp TILDE,         &kp GRAVE,         &kp EQUAL,         &u_colon,          &kp BSLH,          &kp PIPE,          &kp SEMICOLON,     &kp PLUS,          U_NA,              U_NA,              \
 U_NP,              U_NP,              U_NA,              U_NA,              &kp SPACE,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_MOUSE \

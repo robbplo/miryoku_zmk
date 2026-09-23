@@ -30,6 +30,14 @@ MIRYOKU_LAYER_LIST
   };
 };
 
+// Release colon's implicit Shift immediately so rolling into '=' produces ':='.
+// A zero-length tap intentionally disables colon's hold-to-repeat behavior.
+U_MACRO(u_colon,
+  wait-ms = <0>;
+  tap-ms = <0>;
+  bindings = <&macro_tap &kp COLON>;
+)
+
 #include "miryoku_shift_functions.dtsi"
 
 #include "miryoku_double_tap_guard.dtsi"
